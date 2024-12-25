@@ -1,0 +1,124 @@
+<!--
+Muhammad Hadiff Daniel bin Syarul Azley
+2310771
+Section 1
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My Blog Application</title>
+
+        <!-- CSS styles -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                max-width: 600px;
+                width: 100%;
+                background: #ffffff;
+                padding: 20px 40px 20px 20px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            input, textarea, button {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            button:active {
+                background-color: rgb(9, 92, 53);
+            }
+
+            .blog-container {
+                max-width: 600px;
+                width: 100%;
+                background: #ffffff;
+                padding: 33px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .blog-container h2 {
+                color: #333;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .blog-post {
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+
+            .blog-post h3 {
+                margin: 0;
+                color: #0088ff; /* Blue title */
+            }
+
+            .blog-post p {
+                margin: 5px 0;
+                color: #555; /* Gray content */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Blog input section -->
+        <div class="container">
+            <h1 id="heading">My Blog Application</h1>
+            <form id="blogForm">
+                <input type="text" id="blogTitle" placeholder="Enter blog title" required>
+                <textarea id="blogContent" placeholder="Enter blog content" required></textarea>
+                <button type="submit" class="btn-post" id="btnPost">Add Blog Post</button>
+            </form>
+        </div>
+
+        <!-- Blog posts display section -->
+        <div class="blog-container" id="blogContainer">
+            <h2></h2>
+            <!-- Blog posts will appear here -->
+        </div>
+
+        <script src="scriptLabTestS1.js"></script>
+    </body>
+</html>
